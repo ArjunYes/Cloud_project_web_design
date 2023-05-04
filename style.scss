@@ -2,20 +2,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .blueBanner {
 
 
-    background-color: rgb(87, 87, 184);
-    display: flex;
+    background-color: rgb(84, 84, 190);
+    display: grid;
+    align-items: center;
+    grid-template-columns: 25% 25% 25% 25%;
     height: 30px;
 
     input {
         padding-top: 5px;
         padding-bottom: 5px;
+        grid-column-start: 4;
+        grid-column-end: 5;
     }
 
+}
+
+.heading{
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .navbar {
@@ -26,7 +36,7 @@
     grid-template-columns: 25% 25% 25% 25%;
 
     .navItems {
-        border: 1px solid red;
+        // border: 1px solid red;
         grid-column-start: 3;
         grid-column-end: 5;
 
@@ -45,8 +55,10 @@
 
     }
 
+    
+
     .logo {
-        border: 1px solid red;
+        // border: 1px solid red;
         grid-column-start: 1;
         grid-column-end: 2;
         display: flex;
@@ -60,5 +72,74 @@
 }
 
 .banner_below{
+    // border: 2px solid blue;
+    border-top: 0.2px solid rgb(176, 174, 174);
+    border-bottom: 0.2px solid rgb(176, 174, 174);
+    width: 80%;
     height: 120px;
+
+    margin: auto;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 25% 25% 25% 25%;
+
+    .option{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        padding: 10px;
+    }
+    margin-bottom: 20px;
+}
+
+.item_listing{
+    // background-color: aliceblue;
+    width: 80%;
+    margin: auto;
+
+
+    display: grid;
+    align-items: center;
+    grid-template-columns: 25% 25% 25% 25%;
+
+
+    .single_item{
+        border : 0.1px solid gray;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        // border: 1px solid red;
+
+        .image_holder{
+            // border: 1px solid green;
+            img{
+                height: 310px;
+                width: 100%;
+            }
+        }
+
+        .starGroup{
+           i{
+            // background-color: ;
+           }
+        }
+
+        button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            color: white;
+            background-color: rgb(170, 170, 170);
+            border: none;
+        }
+    }
+}
+
+.llitem{
+    text-decoration: none;
+    list-style: none;
 }
