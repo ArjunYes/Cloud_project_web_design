@@ -6,15 +6,16 @@
 }
 
 .blueBanner {
-  background-color: rgb(84, 84, 190);
+  background-color: #649DAD;
+}
+.blueBanner .items {
+  width: 80%;
+  margin: auto;
   display: grid;
-  align-items: center;
   grid-template-columns: 25% 25% 25% 25%;
   height: 30px;
 }
-.blueBanner input {
-  padding-top: 5px;
-  padding-bottom: 5px;
+.blueBanner .items .input {
   grid-column-start: 4;
   grid-column-end: 5;
 }
@@ -38,10 +39,6 @@
   align-items: center;
   justify-content: space-around;
 }
-.navbar .navItems ul li a {
-  text-decoration: none;
-  list-style: none;
-}
 .navbar .logo {
   grid-column-start: 1;
   grid-column-end: 2;
@@ -49,7 +46,7 @@
   align-items: center;
 }
 .navbar .logo img {
-  width: 100%;
+  height: 100px;
 }
 
 .banner_below {
@@ -74,6 +71,7 @@
   margin: auto;
   display: grid;
   align-items: center;
+  gap: 20px;
   grid-template-columns: 25% 25% 25% 25%;
 }
 .item_listing .single_item {
@@ -83,8 +81,11 @@
   flex-direction: column;
   justify-content: center;
 }
+.item_listing .single_item h3 {
+  margin-bottom: 10px;
+}
 .item_listing .single_item .image_holder img {
-  height: 310px;
+  height: 300px;
   width: 100%;
 }
 .item_listing .single_item button {
@@ -95,7 +96,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   color: white;
-  background-color: rgb(170, 170, 170);
+  background-color: #649DAD;
   border: none;
 }
 
